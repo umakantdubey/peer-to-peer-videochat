@@ -31,16 +31,32 @@
            <br>
            <br>
           
-          <input type="text" id="message" 
-          class="form-control" 
-          placeholder="enter a message"
-           required>
+          <input type="text" id="message"  class="form-control"   placeholder="enter a message"  required>
            <br>
            <br>
-        <button id="button" type="submit" 
-        class="btn btn-primary">Send Message</button>
+        <button id="button" type="submit"   class="btn btn-primary">Send Message</button>
       </div>
 
+      <hr>
+      <div class="container">
+        <div class="row">
+        
+          <div class="col-sm-6 col-md-6 col-lg-6">
+         <video id="rVideo" autoplay="autoplay" >
+          </div>
+         
+          <div class="col-sm-6 col-md-6 col-lg-6">
+            <video id="lVideo" autoplay="autoplay" muted>
+          </div>
+         
+        </div>
+        <span id="displayId"></span>
+        <input type="text" id="connId"  class="form-control"   placeholder="enter a connection id "  required>
+        <button id="conn_button" type="submit"   class="btn btn-lg btn-success btn-block">Connect</button>
+        <button id="call_button" type="submit"   class="btn btn-lg btn-danger btn-block">Call</button>
+      </div>
+
+      <script src="https://unpkg.com/peerjs@1.2.0/dist/peerjs.min.js"></script>
 
 <script src="/socket.io/socket.io.js"></script>
     <script src="/client.js"></script>
