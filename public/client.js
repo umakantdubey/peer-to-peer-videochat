@@ -26,6 +26,6 @@ typing.innerHTML="";
     +data.message +'</p>'
 })
 socket.on("userTyping",(data)=>{
-    typing.innerHTML='<p><em>'+data+'is typing..</em></p>'
+    typing.innerHTML='<p><em>'+data+' is typing..</em></p>'
 
 })
